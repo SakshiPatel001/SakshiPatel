@@ -171,9 +171,9 @@ p{
   fieldset{
       background-color:white;
       margin: 50px;
-      /* background:linear-gradient(135deg,#687883,#3b0052); */
-       border-radius: 25px;
-       border: 2px solid #000;
+      border-radius: 25px;
+      border: 2px solid #000;
+      padding: 3%;
 
   }
   
