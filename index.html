@@ -1,0 +1,169 @@
+<!doctype HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Profile</title>
+
+  
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      type="text/css">
+
+  </head>
+  <body>
+     <div class="box">
+         <img src="myprofile.png" alt="" class="box-image">
+         <h1 class="name">Sakshi Patel</h1>
+         <h5 class="info">Web Developer - Software Engineer </h5>
+         
+         <form method="get" action="Resume_Sakshi_patel.pdf" >
+            <!-- <button class="resume" type="button"><a href="Resume_Sakshi_Patel.pdf" download >Resume</a></button> -->
+           
+            <!-- <button type="submit">download</button> -->
+            <a href="Resume_Sakshi_Patel.pdf" download="Resume_Sakshi_Patel">
+                <button type="button" class="resume" >RESUME</button>
+                </a>
+
+
+
+
+            </form>
+          
+         
+       
+    
+         <form action="contact.html">
+         
+         <a href="#ff">
+           <button  type="button" class="contact">  CONTACT</button></a>
+        
+        </form>
+
+  
+
+         <form action="about.html">
+             <button class="about" type="submit" >ABOUT</button>
+         </form>
+     </div>
+<p>Here is the link of static website</p>
+
+
+
+     <section>
+      <div id="ff">
+      <p>Contact Details:</p>  
+
+  <fieldset>
+        
+    <form id="contactfo" method="POST" action="https://httpbin.org/post">  
+    
+    <div>
+        <label for="name"><b>First Name: </b>   </label> 
+        <input type="text" id="name" name="name" size="25" placeholder="Enter your First Name"required/>
+        <label for="name"> <b>Last Name:  </b></label> 
+        <input type="text" id="name" name="name" size="25" placeholder="Last Name"/>
+        <br><br>
+        <label for="email"> <b>Email address: </b></label> 
+        <input type="email" id="email" name="email" size="25" placeholder="Enter your e-mail"required/>
+        <label for="phone"> <b>Phone Number:  </b></label> 
+        <input type="tele" id="phone" name="phone" size="25" placeholder="Enter your Phone Number"required/>
+    </div>
+    <br>
+    <div>
+        <label for="address"><b>Address: </b> </label> 
+        <input type="text" id="address" name="address" size="86" placeholder="Enter your address"required/>
+    </div>
+    
+    <br>
+
+    <div>
+        <label for="city"> <b>City:  </b></label>
+    <input type="text" list="city" name="city" size="25" placeholder="Enter your city" required>
+    <datalist id="city">
+        <option label="Brampton" value="Brampton"></option>
+        <option label="Calgary" value="Calgary"></option>
+        <option label="Charlottetown" value="Charlottetown"></option>
+        <option label="Chibougamau" value="Chibougamau"></option>
+        <option label="Chilliwack" value="Chilliwack"></option>
+        <option label="Cold Lake" value="Cold Lake"></option>
+        <option label="Dorval" value="Dorval"></option>
+        <option label="Edmonton" value="Edmonton"></option>
+        <option label="Flin Flon" value="Flin Flon"></option>
+        <option label="Hamilton" value="Hamilton"></option>
+        <option label="Iqualuit" value="Iqualuit"></option>
+        <option label="Ontario" value="Ontario"></option>
+        <option label="Ottawa" value="Ottawa"></option>
+        <option label="Miramichi" value="Miramichi"></option>
+        <option label="Mississauga" value="Mississauga"></option>
+        <option label="Montreal" value="Montreal"></option>
+        <option label="Red Deer" value="Red Deer"></option>
+        <option label="St. John" value="St. John"></option>
+        <option label="St. John's" value="St. John's"></option>
+        <option label="Toronto" value="Toronto"></option>
+        <option label="Vancouver" value="Vancouver"></option>
+        <option label="Vaughan" value="Vaughan"></option>
+        <option label="Whitehorse" value="Whitehorse"></option>
+        <option label="Winnipeg" value="Winnipeg"></option>
+        <option label="Woodbridge" value="Woodbridge"></option>
+        <option label="Yellowknife" value="Yellowknife"></option>
+    </datalist>
+    <label for="postalcode"> <b>Postal Code:</b> </label> 
+        <input type="text" id="postalcode" title="Use format A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" name="postalcode" size="25" placeholder="Enter your postal code"required/>
+    </div>
+    <br>
+    
+  <div>
+    <label for="purpose">
+        <b>Purpose: </b></label>
+<span id="radiobuttons">
+    <input type="radio" id="hide" name="purpose" value="question"onclick="dynamic()" checked/>Question
+    <input type="radio" id="hide" name="purpose" value="comment" onclick="dynamic()"/>Comment
+    <input type="radio" id="hiring" name="purpose" value="hiring" onclick="dynamic()"/>Hiring
+</span>
+</div>
+
+<div id="hr">
+    <label for="hr"> Hourly Rate ( in $): </label> 
+    <input type="number" id="hourlyrate" name="hourlyrate" size="15" placeholder="Enter Hourly Rate"/>
+</div>
+
+<script>
+
+  function dynamic()
+{
+if(document.getElementById('hiring').checked)
+{
+document.getElementById('hr').style.display = "block";
+}
+else
+{
+document.getElementById('hr').style.display = "none";
+}
+return;
+}
+
+</script>
+<br>
+<br>
+
+<div>
+<label for="message" > <b>Message: </b></label>
+
+<textarea form="contactform" rows="5" cols="80" name="message" >
+ </textarea>
+</div>
+       
+<input type="reset" id="Reset" value="Reset">
+&nbsp;
+
+  <input type="submit" formmethod="post" value="Submit">
+
+</div>
+</form>
+</fieldset>
+</section>
+</body>
+</html>
