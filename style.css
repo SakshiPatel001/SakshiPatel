@@ -3,9 +3,11 @@ body{
 
     /* text-align: center; */
     background-color:dodgerblue;
- 
 
-    width: 93%;
+    max-width: 1024px;
+    margin: 200px; 
+
+    width: 95%;
    
     background:linear-gradient(135deg,#71b7e6,#9b59b6);
 
@@ -21,6 +23,18 @@ body{
     text-align: center;
     max-width: 700px;
    
+}
+
+.link{
+  color:black;
+  font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0px;
+        text-align: center;
+
+        
+
 }
 
 .box-image{
@@ -156,7 +170,6 @@ p{
 
   fieldset{
       background-color:white;
-      
       margin: 50px;
       /* background:linear-gradient(135deg,#687883,#3b0052); */
 
